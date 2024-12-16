@@ -53,3 +53,33 @@ player1.print_infoP()
 
 player1.say("блин...*cry*")
 
+
+class Enemy:
+    ename =""
+    eclass = ""
+    ehp=""
+    emana=""
+    eweapon=""
+    edamage=""
+    def __init__(self, newename,neweclass,newehp,newedamage,neweweapon="нема оружия"):
+        self.ename =newename 
+        self.eclass=neweclass
+        self.ehp=newehp
+        self.eweapon=neweweapon
+        self.edamage=newedamage
+        
+    def info(self):
+        print(f"Имя противника: {self.ename}\nКласс: {self.eclass}\nХп: {self.ehp}\nОружие: {self.eweapon}\nДамаг: {self.edamage}")
+
+
+enemy1 = Enemy("матр4сс","тожегайсмода", 100, 10)
+enemy1.info()
+
+  
+
+
+# ⁣yes     yes  yes yes yes
+# yesyes  yes  yes     yes
+# yes yes yes  yes     yes
+# yes  yesyes  yes     yes
+# yes     yes  yes yes yes
